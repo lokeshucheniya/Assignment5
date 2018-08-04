@@ -7,7 +7,7 @@ class Television {
 		Scanner scanner=new Scanner(System.in);
 		TelevisionTest television=new TelevisionTest();
 		
-		
+		//Collecting inputs from user
 		System.out.println("Enter the Current state (ON/OFF)");
 		String currentState= scanner.nextLine();
 		television.setCurrentState(currentState);
