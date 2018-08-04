@@ -4,7 +4,7 @@ public class TelevisionTest {
 	private int currentVolume;
 	private int currentChannel;
 	
-		
+	//Generating Getters and Setters	
 	public String getCurrentState() {
 		return currentState;
 	}
@@ -30,26 +30,28 @@ public class TelevisionTest {
 	}
 	
 	
-	
+	//Method for increasing volume
 	public int increaseVolume(int increasedVolume)
 	{
 		currentVolume+=increasedVolume;
 		return currentVolume;
 	}
 	
-
+	//Method for decreasing volume
 	public int decreaseVolume(int decreasedVolume)
 	{
 		currentVolume-=decreasedVolume;
 		return currentVolume;
 	}
 	
+	//Method for changing channel
 	public int changeChannel(int changedChannel)
 	{
 		currentChannel=changedChannel;
 		return currentChannel;
 	}
 	
+	//Method for turning TV off or on
 	public void turnTV(String state)
 	{
 		currentState=state;
