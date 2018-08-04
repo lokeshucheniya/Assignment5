@@ -33,9 +33,7 @@ class Television {
 		int currentChannel= scanner.nextInt();
 		television.setCurrentChannel(currentChannel);
 		
-		
-		
-		
+	
 		System.out.println("Do you want to increase the volume?");
 		String answerIncreaseVolune= scanner.next();
 		
