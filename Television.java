@@ -44,7 +44,7 @@ class Television {
 		
 		if(answerIncreaseVolune.equals("Yes"))
 		{
-			System.out.println("Enter the value by which you want to increase the volune");
+			System.out.println("Enter the value by which you want to increase the volume");
 			int increasedVolume=scanner.nextInt();
 			television.increaseVolume(increasedVolume);
 			System.out.println("The current volume is "+television.getCurrentVolume());
