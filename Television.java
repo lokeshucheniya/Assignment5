@@ -8,30 +8,28 @@ class Television {
 		TelevisionTest television=new TelevisionTest();
 		
 		//Collecting inputs from user
-		System.out.println("Enter the Current state (ON/OFF)");
+		System.out.println("Enter the Current state (On/Off)");
 		String currentState= scanner.nextLine();
 		television.setCurrentState(currentState);
 		
 		
-		if(currentState.equals("OFF"))
+		if(currentState.equals("Off"))
 		{
-			System.out.println("Do you want to turn on the TV?");
+			System.out.println("Do you want to turn on the TV?(Yes/No)");
 			String turn= scanner.nextLine();
 			if(turn.equals("Yes"))
 			{
-				television.turnTV("ON");
+				television.turnTV("On");
 			}
 			else
 				System.exit(0);
 		}
 		
-		
-		
 		System.out.println("Enter the Current volume");
 		int currentVolume= scanner.nextInt();
 		television.setCurrentVolume(currentVolume);
 		
-		System.out.println("Enter the Current channel");
+		System.out.println("Enter the Current channel No.");
 		int currentChannel= scanner.nextInt();
 		television.setCurrentChannel(currentChannel);
 		
@@ -40,7 +38,6 @@ class Television {
 		
 		System.out.println("Do you want to increase the volume?");
 		String answerIncreaseVolune= scanner.next();
-		// System.out.println(answerIncreaseVolune);
 		
 		if(answerIncreaseVolune.equals("Yes"))
 		{
@@ -54,13 +51,13 @@ class Television {
 		String answerDecreaseVolune= scanner.next();
 		if(answerDecreaseVolune.equals("Yes"))
 		{
-			System.out.println("Enter the value by which you want to decrease the volune");
+			System.out.println("Enter the value by which you want to decrease the volume");
 			int decreasedVolume=scanner.nextInt();
 			television.decreaseVolume(decreasedVolume);
 			System.out.println("The current volume is "+television.getCurrentVolume());
 		}
 		
-		System.out.println("Do you want to change the channel?");
+		System.out.println("Do you want to change the channel?(Yes/No)");
 		String answerchangeChannel= scanner.next();
 		if(answerchangeChannel.equals("Yes"))
 		{
@@ -70,7 +67,7 @@ class Television {
 			System.out.println("The current channel is "+television.getCurrentChannel());
 		}
 		
-		System.out.println("Do you want to turn off the TV?");
+		System.out.println("Do you want to turn off the TV?(Yes/No)");
 		String turn= scanner.next();
 		if(turn.equals("Yes"))
 		{
